@@ -1,0 +1,12 @@
+
+git stash [save "message"]
+
+git pull origin master
+
+git stash list
+
+git stash show -p <stash-id>
+
+--git stash drop [<stash-id>]
+
+git stash pop
