@@ -1,0 +1,60 @@
+git init
+  Usage: git init [repository name]
+git clone
+  Usage: git clone [url]  
+git add
+  Usage: git add [file]  
+git commit
+  Usage: git commit -m “[ Type in the commit message]”  
+git diff
+  Usage: git diff  
+  Usage: git diff –staged 
+  Usage: git diff [first branch] [second branch]  
+git reset
+  Usage: git reset [file]   This command unstages the file, but it preserves the file contents.
+  Usage: git reset [commit]  This command undoes all the commits after the specified commit and preserves the changes locally.
+  Usage: git reset –hard [commit]  This command discards all history and goes back to the specified commit.
+git status
+  Usage: git status
+git rm
+  Usage: git rm [file]  This command deletes the file from your working directory and stages the deletion.
+git log
+  Usage: git log   This command is used to list the version history for the current branch.
+  Usage: git log –follow[file]    This command lists version history for a file, including the renaming of files also.
+git show
+  Usage: git show [commit]   This command shows the metadata and content changes of the specified commit.
+git tag
+  Usage: git tag [commitID]   This command is used to give tags to the specified commit.
+git branch
+  Usage: git branch   This command lists all the local branches in the current repository.
+  Usage: git branch [branch name] This command creates a new branch.
+  Usage: git branch -d [branch name]   This command deletes the feature branch.
+git checkout
+  Usage: git checkout [branch name]   This command is used to switch from one branch to another.
+  Usage: git checkout -b [branch name]  This command creates a new branch and also switches to it.
+git merge
+  Usage: git merge [branch name]   This command merges the specified branch’s history into the current branch.
+git remote
+  git remote –v  list all connections along with their URLs
+  Usage: git remote add [variable name] [Remote Server Link]  This command is used to connect 
+      our local repository to the remote server.  $git remote add origin https://github.com/xyz/demo.git
+git push
+  Usage: git push [variable name] master    This command sends the committed changes of master branch to your remote repository.
+     $git push origin master
+  Usage: git push [variable name] [branch]     This command sends the branch commits to your remote repository.
+  Usage: git push –all [variable name]   This command pushes all branches to your remote repository.
+git pull
+  Usage: git pull [Repository Link]  
+git stash
+  Usage: git stash save  
+  Usage: git stash pop  
+  Usage: git stash list  
+  Usage: git stash drop   $git stash drop stash@{0}
+  
+git fetch origin  fetch all objects from the remote repository that don’t currently reside in the local working directory.
+git gc    will clean unnecessary files and optimize the local repository.
+git prune     deletes objects that don’t have any incoming pointers.  
+git rebase    is used to apply certain changes from one branch to another. For instance:
+git revert    Revert some existing commits
+git commit --amend -m "message"
+
