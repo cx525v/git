@@ -1,0 +1,20 @@
+git status
+git branch
+git log --online
+git log --online --all
+git log --online --all --decorate
+
+git checkout feature     //switch to branch feature 
+git log --online   //see commits
+git rebase master  //rebase feature on master
+
+git log --online
+
+git checkout master
+git log --online 
+
+git merge feature //merge feature branch to master
+
+
+
+
